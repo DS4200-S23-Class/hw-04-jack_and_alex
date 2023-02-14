@@ -1,0 +1,50 @@
+style.css
+
+body {
+	font-family: arial;
+}
+
+#main-header {
+	text-align: center;
+}
+
+#container {
+	display: flex;
+}
+
+#column-left {
+	width: 60vh;
+	height: 100vh;
+}
+
+#column-right {
+	width: 40vh;
+	height: 100vh;
+}
+
+.frame{
+	height: 200;
+	width: 100;
+}
+
+.axis {
+	stroke-width: 4;
+}
+
+circle {
+	fill: blueviolet;
+}
+
+circle:hover {
+	fill: orange;
+	opacity: 1;
+}
+
+circle:click {
+	stroke: black;
+	opacity: 1;
+}
+
+#acknowledgements {
+	font-size: 22px;
+}
