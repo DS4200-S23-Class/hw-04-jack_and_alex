@@ -40,11 +40,38 @@
             <p id='coord_text'></p>
             <div id="add-point">
               <h3>Add a new point:</h3>
-              <label>X:</label>
-              <input type="number" id="new-x" min="1" max="9">
-              <label>Y:</label>
-              <input type="number" id="new-y" min="1" max="9">
-              <button id="add-button">Add</button>
+              <div>
+                  <label for="new-x">Select the x coordinate for the point you want to add:</label>
+                    <select id="new-x">
+                      <option value="1">1</option>
+                      <option value="2">2</option>
+                      <option value="3">3</option>
+                      <option value="4">4</option>
+                      <option value="5">5</option>
+                      <option value="6">6</option>
+                      <option value="7">7</option>
+                      <option value="8">8</option>
+                      <option value="9">9</option>
+                    </select>
+                </div>
+
+                <div>
+                    <label for="new-y">Select the Y coordinate for the point you want to add:</label>
+                    <select id="new-y">
+                      <option value="1">1</option>
+                      <option value="2">2</option>
+                      <option value="3">3</option>
+                      <option value="4">4</option>
+                      <option value="5">5</option>
+                      <option value="6">6</option>
+                      <option value="7">7</option>
+                      <option value="8">8</option>
+                      <option value="9">9</option>
+                    </select>
+                </div>
+
+              <button id="add-button">Add Point</button>
+              
             </div>
             
         </div>
