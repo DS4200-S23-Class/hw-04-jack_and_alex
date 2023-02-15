@@ -1,4 +1,3 @@
-style.css
 
 body {
 	font-family: arial;
@@ -13,12 +12,12 @@ body {
 }
 
 #column-left {
-	width: 60vh;
+	width: 60vw;
 	height: 100vh;
 }
 
 #column-right {
-	width: 40vh;
+	width: 40vw;
 	height: 100vh;
 }
 
@@ -47,4 +46,9 @@ circle:click {
 
 #acknowledgements {
 	font-size: 22px;
+}
+
+.border-item {
+	stroke: black;
+	stroke-width: 4px;
 }
