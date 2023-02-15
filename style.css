@@ -11,19 +11,22 @@ body {
 	display: flex;
 }
 
-#column-left {
+#visualization-container {
 	width: 60vw;
-	height: 100vh;
+	height: 50vh;
+	max-height: 100vh;
 }
 
 #column-right {
 	width: 40vw;
-	height: 100vh;
+	height: 50vh;
+	max-height: 100vh;
 }
 
-.frame{
-	height: 200;
+.visualization{
+	height: 50;
 	width: 100;
+	max-height: 100vh;
 }
 
 .axis {
@@ -46,9 +49,23 @@ circle:click {
 
 #acknowledgements {
 	font-size: 22px;
+	text-align: center;
 }
 
 .border-item {
 	stroke: black;
 	stroke-width: 4px;
+}
+
+#add-point {
+  margin-top: 20px;
+  padding: 10px;
+  
+}
+#add-point label {
+  margin-right: 5px;
+}
+#add-point input {
+  width: 30px;
+  margin-right: 10px;
 }

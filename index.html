@@ -18,10 +18,10 @@
     <div id='container' class = 'container'>
 
         <!-- left column div to hold frame with svgs-->
-        <div id='column-left'>
+        <div id='viszualization-container'>
 
             <!-- Create a frame to hold all of the svgs-->
-            <svg id='frame' height='500', width='500'>
+            <svg id='visualization' height='100%', width='100%' style='width: 500px; float: left;'>
                 <line class='axis' x1="10" y1="10" x2="10" y2="300" stroke="black"/> <!-- vert-->
                 <line class='axis' x1="10" y1="300" x2="300" y2="300" stroke="black"/><!--horiz-->
                 <circle class='circ' cx="30" cy="240" r="10"/>
@@ -34,19 +34,30 @@
         </div>
 
         <!-- Right column div to hold text-->
-        <div id='column-right'>
+        <div id='column-right' style='float: left;'>
 
             <!-- Null paragraph that will be replaced with last point clicked-->
             <p id='coord_text'></p>
+            <div id="add-point">
+              <h3>Add a new point:</h3>
+              <label>X:</label>
+              <input type="number" id="new-x" min="1" max="9">
+              <label>Y:</label>
+              <input type="number" id="new-y" min="1" max="9">
+              <button id="add-button">Add</button>
+            </div>
             
         </div>
-
+        <div style='clear: both;'></div>
     </div>
 
 
 
 
 <h1 id='acknowledgements'>Acknowledgements</h2>
+    <ul>
+        <li>Professor Mosca</li>
+    </ul>
 
 
 <!-- Connect js-->
