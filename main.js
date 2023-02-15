@@ -12,7 +12,7 @@ function addBorder() {
    let scaled_y = 10 - y/30;
 
    // Replaces the null paragraph in the right div with text of the last point clicked
-   let newtext = 'Last point clicked' + ' ' + '('+ scaled_x + ',' + ' ' + scaled_y + ')';
+   let newtext = 'Last point clicked:' + ' ' + '('+ scaled_x + ',' + ' ' + scaled_y + ')';
    document.getElementById('coord_text').innerHTML=newtext;
 
  }
