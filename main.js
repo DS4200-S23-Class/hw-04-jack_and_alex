@@ -1,7 +1,7 @@
 
 // This function adds a border when a circle is clicked on the already created points
 // As well as gets the attributes of the svgs
-function addBorder() {
+function addBorderToCurrent() {
 
    this.classList.toggle("border-item");
 
@@ -22,7 +22,7 @@ function addBorder() {
  // Loops over the list and adds an event listener for each circle clicked
 let circs = document.getElementsByClassName('circ');
 for (let i = 0; i < circs.length; i++) {
-   circs[i].addEventListener("click", addBorder)};
+   circs[i].addEventListener("click", addBorderToCurrent)};
 
 
 const visualization = document.getElementById('visualization');
