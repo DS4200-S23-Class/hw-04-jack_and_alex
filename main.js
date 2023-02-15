@@ -1,5 +1,5 @@
 
-// This function adds a border when a circle is clicked
+// This function adds a border when a circle is clicked on the already created points
 // As well as gets the attributes of the svgs
 function addBorder() {
 
@@ -53,24 +53,24 @@ function addEventListeners(point) {
   });
   point.addEventListener('click', () => {
     point.classList.toggle('selected');
-  });
-  point.addEventListener('click', () => {
-    addBorder2(point);
+    addBorder(point);
   });
 };
 
+function addBorder(point) {
+  if (point.classList.contains('border-item')) {
+    point.classList.remove('border-item');
+  } else {
+    point.classList.add('border-item');
+  }
+  let x = point.getAttribute('cx');
+  let y = point.getAttribute('cy');
 
-function addBorder2(point) {
-  point.setAttribute('stroke', 'black');
-  point.setAttribute('stroke-width', '3');
-
-   let x = point.getAttribute('cx');
-   let y = point.getAttribute('cy');
   // Scaled the x and y coords
-   let scaled_x = x/30;
-   let scaled_y = 10 - y/30;
+  let scaled_x = x/30;
+  let scaled_y = 10 - y/30;
 
-   // Replaces the null paragraph in the right div with text of the last point clicked
-   let newtext = 'Last point clicked:' + ' ' + '('+ scaled_x + ',' + ' ' + scaled_y + ')';
-   document.getElementById('coord_text').innerHTML=newtext;
+  // Replaces the null paragraph in the right div with text of the last point clicked
+  let newtext = 'Last point clicked:' + ' ' + '('+ scaled_x + ',' + ' ' + scaled_y + ')';
+  document.getElementById('coord_text').innerHTML=newtext;
 }
