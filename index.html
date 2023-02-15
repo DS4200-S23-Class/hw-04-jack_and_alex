@@ -2,6 +2,7 @@
 <html> 
 
 <head>
+    <!-- Connect css-->
     <link rel="stylesheet" href="style.css">
     <meta charset=utf-8/>
 
@@ -16,31 +17,38 @@
 
     <div id='container' class = 'container'>
 
+        <!-- left column div to hold frame with svgs-->
         <div id='column-left'>
+
+            <!-- Create a frame to hold all of hte svgs-->
             <svg id='frame' height='500', width='500'>
                 <line class='axis' x1="10" y1="10" x2="10" y2="300" stroke="black"/> <!-- vert-->
-                <line class='axis' x1="10" y1="300" x2="300" y2="300" stroke="black"/><!-- horizontal-->
-                <circle id='circ' cx="30" cy="270" r="10"/>
-                <circle cx="60" cy="180" r="10"/>
-                <circle cx="180" cy="270" r="10"/>
-                <circle cx="270" cy="30" r="10"/>
+                <line class='axis' x1="10" y1="300" x2="300" y2="300" stroke="black"/><!--horiz-->
+                <circle class='circ' cx="30" cy="240" r="10"/>
+                <circle class= 'circ' cx="60" cy="180" r="10"/>
+                <circle class = 'circ' cx="180" cy="240" r="10"/>
+                <circle class='circ' cx="270" cy="30" r="10"/>
 
             </svg>
 
         </div>
 
+        <!-- Right column div to hold text-->
         <div id='column-right'>
-            <p>text</p>
+
+            <!-- Null paragraph that will be replaced with last point clicked-->
+            <p id='coord_text'></p>
         </div>
 
-    <div>
+    </div>
 
 
 
-<div>
-    <h2 id='acknowledgements'>Acknowledgements</h2>
-</div>
 
+<h1 id='acknowledgements'>Acknowledgements</h2>
+
+
+<!-- Connect js-->
 <script src="main.js"></script>  
 </body>
 
